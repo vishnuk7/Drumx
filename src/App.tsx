@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import GlobalStyle from './components/GlobalStyle';
+
+import Main from './components/Main';
+import Nav from './components/Nav';
+import { COLORS } from './styles/variables';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<AppDiv>
+			<GlobalStyle />
+			<Nav />
+			<Main />
+		</AppDiv>
+	);
 }
+
+const AppDiv = styled.div``;
 
 export default App;
