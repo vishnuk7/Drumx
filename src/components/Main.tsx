@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { COLORS, SHADOW } from '../styles/variables';
+import Instruments from './Instruments';
 
 function Main() {
 	return (
 		<MainStyled>
-			<h5>Hello</h5>
+			<Instruments />
 		</MainStyled>
 	);
 }
