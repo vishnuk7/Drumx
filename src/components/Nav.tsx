@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Slider from 'react-input-slider';
 
 //import svg
 import logo from '../img/logo.svg';
@@ -20,7 +21,23 @@ function Nav() {
 				<div className='item'>
 					<img src={play} alt='play' />
 				</div>
-				<div className='item'></div>
+				<div className='item'>
+					<Slider
+						axis='x'
+						xstep={0.1}
+						xmin={0}
+						xmax={100}
+						styles={{
+							track: {
+								backgroundColor: COLORS.WHITE,
+							},
+							active: {
+								backgroundColor: COLORS.PRIMARY,
+							},
+							thumb: {},
+						}}
+					/>
+				</div>
 				<div className='item'>
 					<input type='text' value='150 BPM'></input>
 				</div>
